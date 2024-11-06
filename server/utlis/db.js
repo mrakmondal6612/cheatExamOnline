@@ -4,7 +4,7 @@
 const mongoose = require('mongoose')
 
 // const URI = 'mongodb+srv://skahidulla:Ahidulla@Nabab#DB21@cluster0.vhhqfin.mongodb.net/exam_db?retryWrites=true&w=majority&appName=Cluster0'
-const URI = process.env.MONGODB_URI
+const URI = 'mongodb+srv://ahidulla:NababDBMakaut21@cluster0.y7mybrq.mongodb.net/exam_db?retryWrites=true&w=majority&appName=Cluster0'
 // mongoose.connect(URI)
 
 const connectDb = async () => {
