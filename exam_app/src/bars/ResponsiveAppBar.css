@@ -1,0 +1,17 @@
+.appbar{
+    background: #08083a;
+    /* color: #0b0b42; */
+}
+/* .outer_appbar{
+    background-color: #0b0b42;
+    color: #0b0b42;
+} */
+
+a{
+    text-decoration: none;
+    color: rgb(112, 0, 93);
+    font-weight: 500;
+}
+.user_logged{
+    visibility: hidden;
+}

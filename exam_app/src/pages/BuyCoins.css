@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer_buycoin{
+    background: radial-gradient(#0b0b42, black);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(253, 255, 254);
+    /* text-shadow: 0 0 15px #1313c1; */
+    position: relative;
+    min-height: 100vh;
+}
+
+.coin_conatiner{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.outer_buycoin .coin_inner{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    user-select: none;
+    padding-bottom: 2rem;
+    min-height: 90vh;
+}
+
+.outer_buycoin .coin_inner .pricing_card{
+    background-color: goldenrod;
+    height: 20rem;
+    width: 15rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px gold, 
+    -5px -5px 15px rgb(0, 0, 0);
+    color: rgb(0, 0, 85);
+    text-shadow: 0 0 10px goldenrod;
+}
+.outer_buycoin .coin_inner .pricing_card .price_details{
+    position: absolute;
+    /* left: 0;
+    top: 0;
+    transform: translate(-50%, -50%); */
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.outer_buycoin .coin_inner .pricing_card .img_box{
+    overflow: hidden;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer_buycoin .coin_inner .pricing_card .img_box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.outer_buycoin .coin_inner .pricing_card .total_coin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.outer_buycoin .coin_inner .pricing_card .price_exp{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    align-items: center;
+}
+
+.outer_buycoin .coin_inner .pricing_card .decp{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    margin-top: 0.4rem;
+    text-align: center;
+}
+
+
+.outer_buycoin .coin_inner .pricing_card:hover .buy_coin{
+    opacity: 1;
+}
+
+.outer_buycoin .coin_inner .pricing_card .buy_coin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.outer_buycoin .coin_inner .pricing_card .buy_coin button{
+    height: 3rem;
+    width: 8rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.5px solid #BDBDBD;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.outer_buycoin .coin_inner .pricing_card .buy_coin button:hover{
+    background-color: goldenrod;
+}

@@ -1,0 +1,13 @@
+.footer{
+    background-color: #020234;
+    height: 3rem;
+}
+.footer footer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BDBDBD;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}

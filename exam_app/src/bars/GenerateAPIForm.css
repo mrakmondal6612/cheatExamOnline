@@ -1,0 +1,68 @@
+.api_popup{
+    background: radial-gradient(#0b0b42, black);;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.api_popup .api_key_box{
+    height: 20rem;
+    width: 50rem;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.step_box{
+    height: 14rem;
+    /* border: 2px solid red; */
+    margin: auto;
+    padding: 1.5rem;
+}
+
+
+.step2_page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.select_date {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    /* background-color: #f8f9fa; */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* margin-bottom: 1rem; */
+
+    & .select_start_date, .end_date {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+     }
+     
+    & label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+     }
+     
+    & input[type="date"] {
+        padding: 0.5rem;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        width: 100%;
+        max-width: 250px;
+     }
+     
+    & input[type="date"]:disabled {
+        background-color: #e9ecef;
+        cursor: not-allowed;
+     }
+     
+ }
+ 
+ 

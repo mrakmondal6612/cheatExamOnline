@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin_user_section{
+    width: 90%;
+    height: 90vh;
+    margin-left: 10%;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.admin_user_section .admin_user_header{
+    margin-top: 1rem;
+}
+.admin_user_section .admin_user_table{
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: rgb(114, 165, 209);
+}
+
+.admin_user_section .admin_user_table table {
+    width: 100%;
+    overflow: scroll;
+}
+
+.admin_user_section .admin_user_table table tbody{
+    background-color: rgb(255, 255, 255);
+}
+
+.admin_user_section .admin_user_table table thead tr{
+    text-align: center;
+}
+.admin_user_section .admin_user_table table tbody tr{
+    text-align: center;
+}
+.admin_user_section .admin_user_table table thead th,
+.admin_user_section .admin_user_table table tbody td{
+    height: 2rem;
+}
+
+.admin_user_section .admin_user_table table tbody tr a{
+    background-color: rgb(112, 207, 128);
+    padding: 0.35rem 1.7rem;
+    border-radius: 0.4rem;
+    color: white;
+    font-weight: 500;
+    font-size: small;
+    /* margin-bottom: 0.3rem; */
+}
+.admin_user_section .admin_user_table table tbody tr a:hover{
+    background-color: green;
+}
+.admin_user_section .admin_user_table table tbody tr button{
+    background-color: #ff4d4d;
+    padding: 0.39rem 1.4rem;
+    border-radius: 0.4rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.admin_user_section .admin_user_table table tbody tr button:hover{
+    background-color: #e60000;
+}

@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login_outer{
+    height: 100vh;
+    background: radial-gradient(#0b0b42, black);
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_outer .login_inner{
+    width: 40rem;
+    height: 30rem;
+    background: #01011a;
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+    user-select: none;
+    box-shadow: 0px 0px 285px #0b173f;
+}
+.login_outer .login_inner h2{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: rgb(253, 255, 254);
+    text-shadow: 0 0 15px #1313c1;
+}
+.login_outer .login_inner .input_div{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 1rem;
+}
+.login_outer .login_inner .input_div label{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* width: 100%; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #BDBDBD;
+    text-shadow: 0 0 15px #1313c1;
+    font-size: smaller;
+}
+.login_outer .login_inner .input_div label div{
+    height: 3rem;
+    /* border: 2px solid green; */
+    position: relative;
+    margin-top: 0.2rem;
+}
+.login_outer .login_inner .input_div label div input{
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 95%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    z-index: 3;
+    cursor: pointer;
+    color: #BDBDBD;
+    text-shadow: 0 0 50px rgba(245, 245, 245, 0.912);
+}
+.login_outer .login_inner .input_div label div span{
+    position: absolute; 
+    left: 50%;
+    top: 100%;
+    /* bottom: 0%; */
+    transform: translate(-50%, -50%);
+    height: 5%;
+    width: 100%;
+    background-color: rgb(3, 18, 87);
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+.login_outer .login_inner .input_div label div input:hover ~ span,
+.login_outer .login_inner .input_div label div input:focus ~ span,
+.login_outer .login_inner .input_div label div input.not-empty ~ span {
+    height: 95%;
+    top: 50%;
+}
+.login_outer .login_inner .input_div label .pass_field i{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 4;
+    visibility: visible;
+}
+/* .login_outer .login_inner .input_div label .pass_field input:focus ~ i{
+    visibility: visible;
+} */
+.login_outer .login_inner .forget{
+    /* border: 2px solid red; */
+    margin-top: 0.5rem;
+    text-align: right;
+}
+.login_outer .login_inner .forget a{
+    margin-right: 1rem;
+    color: #BDBDBD;
+    text-shadow: 0 0 15px #1313c1;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+    font-size: smaller;
+    font-weight: 500;
+}
+.login_outer .login_inner .forget a:hover{
+    color: rgb(16, 66, 84);
+}
+.login_outer .login_inner .btn_div{
+    margin-top: 2rem;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.login_outer .login_inner .btn_div .btn{
+    outline: none;
+    border: none;
+    width: 85%;
+    height: 2rem;
+    background-color: #060630;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.1rem;
+    font-weight: 500;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* color: rgb(180, 221, 255); */
+    transition: all 0.3s ease-in-out;
+    color: #BDBDBD;
+    text-shadow: 0 0 15px #1313c1;
+    cursor: pointer;
+}
+.login_outer .login_inner .btn_div .btn:hover{
+    
+    box-shadow: 0 0 5px rgb(119, 138, 249),
+    -2px -2px 10px rgb(4, 1, 37);
+}
+.login_outer .login_inner .sign_up{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: #BDBDBD;
+    text-shadow: 0 0 15px #1313c1;
+}
+.login_outer .login_inner .sign_up a{
+    text-decoration: none;
+    color: #BDBDBD;
+    text-shadow: 0 0 15px #1313c1;
+    border: 1px solid #f5f5f561;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    border-radius: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+.login_outer .login_inner .sign_up a:hover{
+    /* background-color: rgb(119, 199, 249); */
+    box-shadow: 0 0 10px rgb(119, 138, 249),
+    -2px -2px 10px rgb(12, 4, 48);
+}
+@media screen and (max-width: 635px){
+    .login_outer .login_inner{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .login_outer .login_inner{
+        width: 20rem;
+    }
+}

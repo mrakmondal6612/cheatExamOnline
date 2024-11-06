@@ -1,0 +1,90 @@
+@keyframes changeColor {
+    0% {
+      color: rgb(95, 12, 4);
+    }
+    25% {
+      color: rgb(3, 11, 54);
+    }
+    50% {
+      color: rgb(70, 7, 70);
+    }
+    75% {
+      color: rgb(3, 11, 54);
+    }
+    100% {
+      color: rgb(95, 12,  4);
+    }
+  }
+  
+  .error_page {
+    height: 100vh;
+    background: #01011a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .error_page .inner_error {
+    height: 60%;
+    width: 60%;
+  }
+  
+  .error_page .inner_error h2 {
+    font-size: 8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    animation: changeColor 5s infinite; /* Adjust animation duration and properties as needed */
+  }
+  
+  .error_page .inner_error .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  .error_page .inner_error .buttons button {
+    height: 3rem;
+    width: 13rem;
+    background-color: transparent;
+    border: none;
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    /* border: 1px solid red; */
+    border: 0.3px solid #BDBDBD;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 550;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .error_page .inner_error .buttons button:hover{
+    background-color: rgb(52, 4, 56);
+  }
+  
+@media screen and (max-width: 610px){
+    .error_page .inner_error h2{
+        font-size: 6rem;
+    }
+    .error_page .inner_error .buttons button{
+      font-size: 1rem;
+    }
+}
+@media screen and (max-width: 466px){
+    .error_page .inner_error h2{
+        font-size: 4rem;
+    }
+    .error_page .inner_error .buttons button{
+      font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 344PX){
+    .error_page .inner_error h2{
+        font-size: 2rem;
+    }
+    .error_page .inner_error .buttons button{
+      font-size: 0.6rem;
+    }
+}
